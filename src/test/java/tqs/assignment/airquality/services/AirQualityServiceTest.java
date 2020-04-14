@@ -11,13 +11,9 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import tqs.assignment.airquality.AirQualityResult;
 import tqs.assignment.airquality.ResultsCache;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
 import java.util.TreeSet;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 @ExtendWith(MockitoExtension.class)
 class AirQualityServiceTest {

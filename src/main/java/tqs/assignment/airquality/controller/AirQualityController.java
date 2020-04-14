@@ -1,12 +1,7 @@
 package tqs.assignment.airquality.controller;
 
 
-import com.mashape.unirest.http.HttpResponse;
-import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,12 +10,9 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
 import tqs.assignment.airquality.AirQualityResult;
 import tqs.assignment.airquality.ResultsCache;
 import tqs.assignment.airquality.services.AirQualityService;
-
-import java.sql.Timestamp;
 
 
 @Controller

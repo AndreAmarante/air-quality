@@ -80,7 +80,7 @@ public class ResultsCache {
     public AirQualityResult checkCache(String city){
 
         for (AirQualityResult r: this.cache) {
-            if(r.getCity().toLowerCase().equals(city.toLowerCase())){
+            if(r.getCity().equalsIgnoreCase(city)){
                 this.numberOfCallsToCitiesStillInCache+=1;
                 return r;
             }
