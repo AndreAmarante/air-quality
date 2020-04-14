@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Air Quality: Get air quality values for specified location</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Result</h1>
+<p th:text="'Location: ' + ${airquality.msg}" />
+<p th:text="'Carbon Monoxide: ' + ${airquality.carbon_monoxide}" />
+<p th:text="'Nitrogen Dioxide: ' + ${airquality.nitrogen_dioxide}" />
+<p th:text="'Ozone: ' + ${airquality.ozone}" />
+<p th:text="'Inhalable Particulate Matter: ' + ${airquality.inhalable_particulate_matter}" />
+<p th:text="'Sulfur Dioxide: ' + ${airquality.sulfur_dioxide}" />
+<p th:text="'Cache: ' + ${cache}" />
+<a href="/home">Search another location</a>
+</body>
+</html>
